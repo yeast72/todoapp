@@ -13,7 +13,7 @@ class App extends Component {
       todos : [
         {id: 0, text: "Make me happy tonight!"},
         {id: 1, text: "Sleep to night!"},
-        {id: 2, text: "Wake up tomorlow"}
+        {id: 2, text: "Wake up tomorrow"}
       ],
       nextId: 3
     }
@@ -27,7 +27,7 @@ class App extends Component {
     todos.push({id:this.state.nextId, text: todoText});
     this.setState({
       todos: todos,
-      nextId: ++this.state.nextId
+      nextId: this.state.nextId + 1
     });
   }
 
